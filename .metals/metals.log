@@ -1,0 +1,214 @@
+2023.09.20 17:33:49 INFO  Started: Metals version 1.0.1 in folders 'D:\Code\Python\Computer Vision' for client Visual Studio Code 1.82.2.
+Sep 20, 2023 5:33:50 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 20, 2023 5:33:50 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 20, 2023 5:33:50 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 20, 2023 5:33:50 PM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:D:\Code\Python\Computer Vision\.metals\metals (H2 2.1)
+Sep 20, 2023 5:33:50 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+Sep 20, 2023 5:33:50 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.020s)
+Sep 20, 2023 5:33:50 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+Sep 20, 2023 5:33:50 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+Sep 20, 2023 5:33:50 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+Sep 20, 2023 5:33:50 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+Sep 20, 2023 5:33:50 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+Sep 20, 2023 5:33:50 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+Sep 20, 2023 5:33:50 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.017s)
+2023.09.20 17:33:50 INFO  time: initialize in 0.63s
+2023.09.20 17:33:51 WARN  Build server is not auto-connectable.
+2023.09.20 17:33:51 WARN  no build tool detected in workspace 'D:\Code\Python\Computer Vision'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.09.20 17:33:51 WARN  no build target for: D:\Code\Scala\Hello.scala
+2023.09.20 17:33:52 INFO  no build target found for D:\Code\Scala\Hello.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.20 17:33:54 INFO  time: code lens generation in 3s
+2023.09.20 17:33:54 INFO  time: code lens generation in 1.37s
+2023.09.20 17:33:55 WARN  no build target for: D:\Code\Scala\Hello.scala
+Sep 20, 2023 5:33:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Code\Scala\Hello.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Code\Scala\Hello.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(Unknown Source)
+	at java.util.concurrent.CompletableFuture.completeThrowable(Unknown Source)
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source)
+	at java.util.concurrent.CompletableFuture.uniAcceptStage(Unknown Source)
+	at java.util.concurrent.CompletableFuture.thenAcceptAsync(Unknown Source)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Code\Scala\Hello.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:470)
+	at scala.meta.internal.metals.MetalsLspService.debugDiscovery(MetalsLspService.scala:1803)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:869)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.09.20 17:33:57 WARN  no build target for: D:\Code\Scala\Hello.scala
+Sep 20, 2023 5:33:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Code\Scala\Hello.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Code\Scala\Hello.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(Unknown Source)
+	at java.util.concurrent.CompletableFuture.completeThrowable(Unknown Source)
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source)
+	at java.util.concurrent.CompletableFuture.uniAcceptStage(Unknown Source)
+	at java.util.concurrent.CompletableFuture.thenAcceptAsync(Unknown Source)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Code\Scala\Hello.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:470)
+	at scala.meta.internal.metals.MetalsLspService.debugDiscovery(MetalsLspService.scala:1803)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:869)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.09.20 17:34:08 WARN  no build target for: D:\Code\Scala\Lesson_1.scala
+Sep 20, 2023 5:34:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Code\Scala\Lesson_1.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Code\Scala\Lesson_1.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(Unknown Source)
+	at java.util.concurrent.CompletableFuture.completeThrowable(Unknown Source)
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source)
+	at java.util.concurrent.CompletableFuture.uniAcceptStage(Unknown Source)
+	at java.util.concurrent.CompletableFuture.thenAcceptAsync(Unknown Source)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Code\Scala\Lesson_1.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:470)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:420)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1676)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:686)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.09.20 17:37:59 INFO  Shutting down server
+2023.09.20 17:37:59 INFO  shutting down Metals
+2023.09.20 17:37:59 INFO  Exiting server
+2023.09.22 07:19:50 INFO  Started: Metals version 1.0.1 in folders 'D:\Code\Python\Computer Vision' for client Visual Studio Code 1.82.2.
+Sep 22, 2023 7:19:50 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 22, 2023 7:19:50 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 22, 2023 7:19:50 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 22, 2023 7:19:50 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:D:\Code\Python\Computer Vision\.metals\metals (H2 2.1)
+Sep 22, 2023 7:19:50 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.046s)
+Sep 22, 2023 7:19:50 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 22, 2023 7:19:50 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.22 07:19:51 INFO  time: initialize in 1.02s
+2023.09.22 07:19:51 WARN  Build server is not auto-connectable.
+2023.09.22 07:19:51 WARN  no build tool detected in workspace 'D:\Code\Python\Computer Vision'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.09.22 07:19:51 WARN  no build target for: D:\Code\Scala\Lesson_1.scala
+2023.09.22 07:19:55 INFO  no build target found for D:\Code\Scala\Lesson_1.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.22 07:23:10 INFO  Shutting down server
+2023.09.22 07:23:10 INFO  shutting down Metals
+2023.09.22 07:23:10 INFO  Exiting server
+2023.09.25 13:12:14 INFO  Started: Metals version 1.0.1 in folders 'D:\Code\Python\Computer Vision' for client Visual Studio Code 1.82.2.
+Sep 25, 2023 1:12:14 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 25, 2023 1:12:14 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 25, 2023 1:12:14 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 25, 2023 1:12:15 PM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:D:\Code\Python\Computer Vision\.metals\metals (H2 2.1)
+Sep 25, 2023 1:12:15 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.058s)
+Sep 25, 2023 1:12:15 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 25, 2023 1:12:15 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.25 13:12:15 INFO  time: initialize in 1.15s
+2023.09.25 13:12:16 WARN  Build server is not auto-connectable.
+2023.09.25 13:12:16 WARN  no build tool detected in workspace 'D:\Code\Python\Computer Vision'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.09.25 13:12:16 WARN  no build target for: D:\Code\Scala\Hello.scala
+2023.09.25 13:12:20 INFO  no build target found for D:\Code\Scala\Hello.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.25 13:12:23 INFO  time: code lens generation in 6.66s
+2023.09.25 13:12:35 INFO  Shutting down server
+2023.09.25 13:12:35 INFO  shutting down Metals
+2023.09.25 13:12:35 INFO  Exiting server
+2023.09.27 16:05:41 INFO  Started: Metals version 1.0.1 in folders 'D:\Code\Python\Computer Vision' for client Visual Studio Code 1.82.2.
+Sep 27, 2023 4:05:41 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 27, 2023 4:05:41 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 27, 2023 4:05:41 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 27, 2023 4:05:41 PM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:D:\Code\Python\Computer Vision\.metals\metals (H2 2.1)
+Sep 27, 2023 4:05:41 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.024s)
+Sep 27, 2023 4:05:42 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 27, 2023 4:05:42 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.27 16:05:42 INFO  time: initialize in 0.64s
+2023.09.27 16:05:43 WARN  Build server is not auto-connectable.
+2023.09.27 16:05:43 WARN  no build tool detected in workspace 'D:\Code\Python\Computer Vision'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.09.27 16:05:43 WARN  no build target for: D:\Code\Scala\Hello.scala
+2023.09.27 16:05:46 INFO  no build target found for D:\Code\Scala\Hello.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.27 16:06:36 WARN  no build target for: D:\Code\Scala\Lesson_1.scala
+2023.09.27 17:37:47 INFO  Shutting down server
+2023.09.27 17:37:47 INFO  shutting down Metals
+2023.09.27 17:37:47 INFO  Exiting server

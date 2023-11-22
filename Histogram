@@ -1,0 +1,12 @@
+Phân ngưỡng
+VD: Tách da
+1. Tìm ngưỡng
++ Chuẩn bị một số ảnh da
++ Tính histogram cho các ảnh (của từng kênh màu)
++ Xđ khoảng [MIN, MAX]
+2. Tách
+- Mở webcam
+- Lặp:
++  Đọc ảnh hiện tại
++ Với mọi x,y:
+    if R(x,y) >= MIN R and R(x,y) <= MAX R
